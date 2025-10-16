@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Welcome to ZEC ID!</title>
+  <meta name="description" content="ZEC ID — anonymous meme-powered identities on Zcash." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">ZEC <span class="dot">ID</span></a>
+
+      <nav class="socials">
+        <a class="social-btn" href="#" id="twitter" aria-label="Twitter link" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M22 5.8c-.6.3-1.3.5-2 .6.7-.4 1.2-1.1 1.4-1.9-.7.4-1.6.7-2.5.9C18.1 4.6 17 4 15.8 4c-2 0-3.6 1.6-3.6 3.6 0 .3 0 .6.1.9C9.1 8.4 6.1 6.9 4 4.4c-.3.6-.5 1.3-.5 2 0 1.3.7 2.4 1.8 3-.6 0-1.2-.2-1.7-.5v.1c0 1.7 1.2 3.2 2.8 3.6-.3.1-.6.1-.9.1-.2 0-.4 0-.6-.1.4 1.3 1.6 2.3 3 2.3-1.1.9-2.5 1.5-4 1.5H6c1.4.9 3 1.4 4.7 1.4 5.6 0 8.7-4.7 8.7-8.7v-.4c.6-.4 1.1-1 1.5-1.6-.5.2-1 .4-1.6.5z" fill="currentColor"/></svg>
+        </a>
+        <a class="social-btn" href="#" id="pumpfan" aria-label="Pumpfan link" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5zm0 7.2L4.2 7 12 3.8 19.8 7 12 9.2zM2 17l10 5 10-5v-3l-10 5-10-5v3z" fill="currentColor"/></svg>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-art">
+          <!-- simple sketch-style defender SVG -->
+          <img src="assets/defender.svg" alt="Privacy Defender sketch" />
+        </div>
+        <div class="hero-copy">
+          <h1>Welcome to ZEC ID!</h1>
+          <p class="lead">Welcome to ZEC ID, the place where your privacy is protected by the power of memes and blockchain. 🛡️</p>
+          <p>Create your very own ZEC ID, an anonymous meme-powered identity for the crypto world! Whether you're looking to stay hidden in the shadows of the internet or just want to have fun with your digital persona, ZEC ID has you covered. Ready to protect your data and have a laugh while doing it? Let’s get started!</p>
+
+          <p class="actions">
+            <button class="btn sketch" id="generateBtn">Generate ZEC ID</button>
+            <a class="btn sketch ghost" href="#contact">Let’s Connect</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="what" class="container sketch-section">
+      <div class="left-art"><img src="assets/shiba.svg" alt="Shiba sketch" /></div>
+      <div class="content">
+        <h2>What is ZEC ID?</h2>
+        <p>ZEC ID is your cryptographic shield in the digital world. 🚀</p>
+        <p>In a universe where privacy is the ultimate currency, ZEC ID is your anonymous digital fingerprint, powered by the Zcash blockchain. When you create a ZEC ID, you're not just creating an identity; you're embracing privacy, freedom, and, most importantly, fun.</p>
+        <p>With ZEC ID, you’re a part of an exclusive club where your digital persona is protected, and only the most relevant info gets out. Protect your online privacy in the most entertaining way possible—through memes!</p>
+      </div>
+    </section>
+
+    <section id="generator" class="container generator">
+      <h2>Generate Your ZEC ID</h2>
+      <p>Want a ZEC ID? Just click the button below to generate your one-of-a-kind, meme-powered, crypto-anonymous identity. Every ZEC ID is unique, reflecting your online character. Will you be a “ZenMaster420” or a “ShieldedShibe”? The choice is yours!</p>
+      <ol class="how">
+        <li>Choose your meme name.</li>
+        <li>Select your privacy style.</li>
+        <li>Generate your ID!</li>
+      </ol>
+
+      <div class="controls">
+        <label for="style">Privacy style:</label>
+        <select id="style">
+          <option>Stealth</option>
+          <option>Shielded</option>
+          <option>Incognito</option>
+          <option>Zen</option>
+        </select>
+      </div>
+
+      <div class="result-card" id="resultCard" aria-live="polite" hidden>
+        <h3>Your ZEC ID</h3>
+        <p id="generatedName" class="big"></p>
+        <p id="generatedStyle" class="muted"></p>
+        <p class="muted small">Created using a fun local generator (this is a front-end demo).</p>
+        <p><button class="btn sketch" id="copyBtn">Copy</button> <button class="btn sketch ghost" id="regenBtn">Generate Again</button></p>
+      </div>
+    </section>
+
+    <section id="privacy" class="container sketch-section">
+      <h2>Privacy: Mirage or Reality?</h2>
+      <p>In the world of memes and cryptos, privacy is both a reality and an illusion. 🌐</p>
+      <p>Sure, we say we value privacy, but how many times have you willingly traded your data for a funny meme or the latest trending coin? Well, with ZEC ID, privacy is not just a concept; it’s a lifestyle.</p>
+      <p>ZEC ID uses the power of Zcash to ensure that your personal data remains shielded while you’re online. So, whether you're posting the latest meme or buying your favorite meme coin, your ZEC ID ensures that your true identity stays hidden.</p>
+      <p>Don’t let your data be the joke—keep it safe, keep it private.</p>
+    </section>
+
+    <section id="how" class="container">
+      <h2>How Does ZEC ID Work?</h2>
+      <p>We live in an age where everything is traceable, and everything is public. But, with ZEC ID, we offer you a way to live under the radar while having a blast. Here’s how it works:</p>
+      <ol class="steps">
+        <li>Choose your meme-inspired name.</li>
+        <li>Set up your ZEC ID with a few funny preferences.</li>
+        <li>Enjoy the memes while keeping your real identity safe!</li>
+      </ol>
+      <p>Every ZEC ID is created using a Zcash shielded transaction, which guarantees that no one can see your real identity. It's like wearing an invisible cloak in the world of the web.</p>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>Let’s Connect!</h2>
+      <p>We’re a meme-loving, privacy-obsessed team, and we’d love to hear from you. If you have questions, ideas, or just want to share a good meme, feel free to reach out!</p>
+      <p>Follow us on our social media to keep up with all the latest ZEC ID updates. Your feedback helps us improve your digital privacy with a smile! 😎</p>
+
+      <div class="social-cta">
+        <a class="big-sketch" href="#" id="footerTwitter">Follow us on Twitter</a>
+        <a class="big-sketch" href="#" id="footerPumpfan">Join us on Pumpfan</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> ZEC ID — Privacy, memes & shields.</p>
+    </div>
+  </footer>
+
+<script src="js/site.js"></script>
+</body>
+</html>

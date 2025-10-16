@@ -1,0 +1,88 @@
+:root{
+  --bg: #ffffff;
+  --marker:#0b5a2b; /* dark green marker */
+  --muted:#516a58;
+  --accent:#0b5a2b;
+  --container:1100px;
+  --sketch-stroke:3px;
+  --gap:20px;
+  font-family: "Patrick Hand", "Comic Sans MS", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background: white;
+  color:#111;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.45;
+  background-image: url('../assets/sketch-grid.svg');
+  background-repeat: repeat;
+  background-size: 220px;
+  background-position: center;
+}
+
+/* container */
+.container{max-width:var(--container);margin:0 auto;padding:36px 20px}
+
+/* header */
+.site-header{border-bottom:4px dashed rgba(11,90,43,0.12);position:sticky;top:0;background:rgba(255,255,255,0.85);backdrop-filter: blur(4px);z-index:10}
+.header-inner{display:flex;align-items:center;justify-content:space-between}
+.brand{font-weight:700;font-size:1.4rem;color:var(--marker);text-decoration:none;display:inline-flex;align-items:center;gap:8px}
+.brand .dot{font-weight:900;color:#0b3f20;transform:rotate(-6deg)}
+
+/* social buttons top-right */
+.socials{display:flex;gap:10px;align-items:center}
+.social-btn{background:transparent;border:2px solid var(--marker);padding:8px;border-radius:10px;display:inline-flex;align-items:center;justify-content:center;color:var(--marker);text-decoration:none;box-shadow: 2px 2px 0 rgba(0,0,0,0.04);transition:transform .12s ease}
+.social-btn:hover{transform:translateY(-3px) rotate(-2deg)}
+
+/* hero */
+.hero{padding:40px 0;display:flex;align-items:center;gap:20px}
+.hero-inner{display:flex;gap:30px;align-items:center}
+.hero-art img{width:260px;max-width:30vw;filter: drop-shadow(6px 6px 0 rgba(11,90,43,0.06));transform:rotate(-2deg)}
+.hero-copy h1{font-size:2.1rem;color:var(--marker);margin-top:0;margin-bottom:6px}
+.lead{font-weight:600;color:#0b3f20;margin-top:0}
+
+/* sketch style elements: rough stroke boxes */
+.sketch-section{display:grid;grid-template-columns:220px 1fr;gap:20px;align-items:start}
+.left-art img{width:200px;transform:rotate(-4deg)}
+
+/* generator */
+.generator .controls{margin:12px 0;display:flex;gap:12px;align-items:center}
+.controls select{font-family:inherit;padding:8px;border:3px solid var(--marker);border-radius:10px;background:transparent;outline:none}
+.result-card{border:4px dashed rgba(11,90,43,0.12);padding:18px;border-radius:16px;margin-top:12px; background:linear-gradient(180deg, rgba(11,90,43,0.02), transparent)}
+
+/* buttons styled as sketch markers (SVG-like) */
+.btn.sketch{
+  display:inline-block;padding:12px 18px;border-radius:14px;border:4px solid var(--marker);background:transparent;font-weight:700;color:var(--marker);text-decoration:none;cursor:pointer;
+  box-shadow: 6px 6px 0 rgba(11,90,43,0.06);
+  transform:rotate(-1deg);
+}
+.btn.sketch.ghost{border-style:dashed;transform:rotate(2deg)}
+
+/* big sketch footer CTAs */
+.social-cta{display:flex;gap:18px;margin-top:12px;flex-wrap:wrap}
+.big-sketch{display:inline-block;padding:14px 20px;border-radius:18px;border:5px dashed var(--marker);background:transparent;text-decoration:none;color:var(--marker);font-weight:800;transform:skewX(-6deg)}
+
+/* lists and typographic */
+h2{color:var(--marker);margin-top:0}
+p, li{color:#0b2f19}
+ol.how, ol.steps{padding-left:20px}
+.steps li, .how li{margin:8px 0}
+
+/* footer */
+.site-footer{margin-top:60px;padding:20px 0;text-align:center;color:var(--muted)}
+
+/* responsive */
+@media (max-width:900px){
+  .sketch-section{grid-template-columns:1fr;gap:18px}
+  .hero-inner{flex-direction:column;align-items:flex-start}
+  .hero-art img{max-width:60vw}
+}
+
+@media (max-width:640px){
+  .header-inner{gap:12px}
+  .left-art{display:none}
+}
